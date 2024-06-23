@@ -1,95 +1,47 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import localFont from 'next/font/local';
+
+// PAGE SECTIONS
+import About from "./page_sections/About";
+import ProjectManager from "./page_sections/ProjectManager";
+import Contact from "./page_sections/Contact";
+
+// COMPONENTS
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <div style={styles.wrapper}>
+      <section className={styles.headerSection}>
+        <Header />
+      </section>
+      <section className={styles.mainSection}>
+      <main className={styles.main}>
+        <section className={styles.banner}>
+          <span className={`${styles.title} ${styles.titlePrimer}`}>Hello, my name is</span>
+          <h2 className={styles.title} id="name">Kenyon Huppe</h2>
+          <h2 className={styles.title} id="tagline">Engineering excellence in code for exceptional user experiences.</h2>
+          <h3 className={styles.title} id="position-title">Software Engineer</h3>
+          <div className={`${styles.title} ${styles.resumeWrapper}`}>
+            <a href="/KenyonHuppe_Resume.pdf" id="resume-download" download>Grab a copy of my resume!</a>
+          </div>
+        </section>
+        <section className={styles.aboutSection} id="about">
+          <About />
+        </section>
+        <section className={styles.projectsSection} id="projects">
+          <ProjectManager />
+        </section>
+        <section className={styles.contactSection} id="contact">
+          <Contact />
+        </section>
+      </main>
+      </section>
+      <section className={styles.footerSection}>
+        <Footer />
+      </section>
+    </div>
   );
 }

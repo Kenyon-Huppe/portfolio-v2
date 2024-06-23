@@ -1,6 +1,23 @@
+/***** FONTS *****/
+/** MOON **/
+@font-face {
+  font-family: "Moon";
+  src: url("/fonts/moon/Moon2.0-Regular.otf");
+}
+
+/** LORA **/
+@font-face {
+  font-family: "Lora";
+  src: url("/fonts/lora/Lora-medium.ttf");
+}
+
 :root {
+
+  
   --max-width: 1100px;
   --border-radius: 12px;
+  --font-moon: "Moon";
+  --font-lora: "Lora";
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
