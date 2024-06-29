@@ -1,4 +1,4 @@
-import styles from './css/projectManager.module.css'
+import styles from './css/projectManager.module.scss'
 
 import Project from '../components/Project';
 

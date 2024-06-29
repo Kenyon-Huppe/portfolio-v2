@@ -1,4 +1,4 @@
-import styles from './css/about.module.css'
+import styles from './css/about.module.scss'
 
 export default function about() {
   return (

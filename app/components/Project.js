@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './css/project.module.css'
+import styles from './css/project.module.scss'
 
 import Card from './Card'
 
