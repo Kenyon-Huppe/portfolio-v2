@@ -6,9 +6,9 @@ export default function Header() {
     <header className={`${styles.container} ${styles.header}`}>
       <nav>
           <ul>
-              <li><a href="#about" className={styles.navLink} id="projects-link">About</a></li>
-              <li><a href="#projects" className={styles.navLink} id="tech-link">Projects</a></li>
-              <li><a href="#contact" className={styles.navLink} id="contact-link">Contact</a></li>
+              <li className={styles.aboutContainer}><a href="#about" className={`${styles.navLink} ${styles.aboutLink}`}>About</a></li>
+              <li className={styles.projectsContainer}><a href="#projects" className={`${styles.navLink} ${styles.projectsLink}`}>Projects</a></li>
+              <li className={styles.contactContainer}><a href="#contact" className={`${styles.navLink} ${styles.contactLink}`}>Contact</a></li>
           </ul>
       </nav>
     </header>

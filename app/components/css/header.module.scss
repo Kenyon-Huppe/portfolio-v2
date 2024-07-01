@@ -1,6 +1,20 @@
 .header {
 
     ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+        li {
+            font-size: 1.5em;
+            margin-left: 10rem;
+
+        }
+
+        .aboutContainer {
+            margin-left: 0;
+        }
+
         
     }
 }

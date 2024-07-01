@@ -1,0 +1,120 @@
+@import '../../variables.scss';
+
+.aboutSection {
+    .aboutContentContainer {
+        .top {
+            display: flex;
+            flex-direction: row;
+
+            .aboutTextContainer {
+                width: 50%;
+
+                p {
+                    margin-top: 1rem;
+                }
+            }
+
+            .imageContainer {
+                width: 50%;
+
+                .profilePic {
+                    width: 51%;
+                    display: block;
+                    margin: 1rem 0 0 auto;
+                }
+            }
+        }
+
+        .bottom {
+            .techStacksContainer {
+                // width: 100%;
+                .techStacks {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    margin-top: 2rem;
+
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        list-style: none;
+                        margin: 1rem 7rem;
+                        width: 7rem;
+
+                        svg {
+                            font-size: 7rem;
+                            margin: 0 auto;
+                        }
+
+                        span {
+                            margin: 0 auto;
+                            font-weight: bold;
+                            font-style: italic;
+                            user-select: none;
+                        }
+                    }
+
+                    .tech1, .tech2, .tech3, .tech4 {
+                        margin: 1rem 5.5rem;
+                    }
+
+                    .tech5, .tech6, .tech7 {
+                        margin: 1rem 6rem;
+                    }
+
+                    .tech8, .tech9 {
+                        margin: 1rem 6rem;
+                    }
+
+                    // COLOR CHANGES
+                    svg {
+                        transition: $transitionTime;
+                        transition-delay: $transitionDelay;
+                    }
+
+                    span {
+                        transition: $transitionTime;
+                    }
+
+                    .nextjs:hover, .nextjs:focus {
+                        color: #61DBFB;
+                    }
+
+                    .javascript:hover, .javascript:focus {
+                        color: #f0db4f;
+                    }
+
+                    .python:hover, .python:focus {
+                        color: #ffd43d;
+                    }
+
+                    .java:hover, .java:focus {
+                        color: #f89820;
+                    }
+
+                    .scss:hover, .scss:focus {
+                        color: #c69;
+                    }
+
+                    .docker:hover, .docker:focus {
+                        color: #1D63ED;
+                    }
+
+                    .git:hover, .git:focus{
+                        color: #f34f29;
+                    }
+
+                    .css:hover, .css:focus {
+                        color: #0098FF;
+                    }
+
+                    .html:hover, .html:focus {
+                        color: #FF0000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
