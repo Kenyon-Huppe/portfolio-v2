@@ -5,19 +5,21 @@ import Card from './Card'
 
 export default function Project({image, title, description, stacks}) {
   return (
-    <>
+    <div className={styles.container}>
         <Card image={image} />
         <div className={styles.textSection}>
-            <h3>{title}</h3>
-            <div className={styles.descriptionSection}>
-                <p>{description}</p>
-            </div>
-            <div className={styles.stacksList}>
-                {stacks.map((element, id) => (
-                    <li key={id}>{element}</li>
-                ))}
+            <div className={styles.textBorder}>
+                <h3>{title}</h3>
+                <div className={styles.descriptionSection}>
+                    <p>{description}</p>
+                </div>
+                <div className={styles.stacksList}>
+                    {stacks.map((element, id) => (
+                        <li key={id}>{element}</li>
+                    ))}
+                </div>
             </div>
         </div>
-    </>
+    </div>
   )
 }

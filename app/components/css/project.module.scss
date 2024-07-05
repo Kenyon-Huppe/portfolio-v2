@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.container {
+    display: flex;
+    flex-flow: row;
+    margin: 3rem 0 3rem;
+
+    .textSection {
+        width: 40%;
+        margin: 0 5% 0 5%;
+        
+        .textBorder {
+            padding: 1rem;
+            border: 3px solid $primary;
+            border-radius: 10px;
+        
+
+            h3 {
+                width: max-content;
+                margin: 0 0 1rem auto;
+            }
+
+            .stacksList {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+
+                li {
+                    margin-top: 1.5rem;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

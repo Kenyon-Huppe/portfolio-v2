@@ -10,7 +10,7 @@
                 width: 50%;
 
                 p {
-                    margin-top: 1rem;
+                    margin-bottom: 1rem;
                 }
             }
 
@@ -20,7 +20,7 @@
                 .profilePic {
                     width: 51%;
                     display: block;
-                    margin: 1rem 0 0 auto;
+                    margin: 0 0 0 auto;
                 }
             }
         }
@@ -32,7 +32,7 @@
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: center;
-                    margin-top: 2rem;
+                    margin: 4rem 0 3rem;
 
                     li {
                         display: flex;
