@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.container {
+    .socials {
+        display: flex;
+        flex-flow: row;
+        max-width: 20%;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        li {
+            svg {
+                font-size: 3rem;
+            }
+        }
+    }
+}

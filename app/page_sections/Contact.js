@@ -36,7 +36,7 @@ export default function Contact() {
                 </h4>
                 <textarea name="message" className={`${styles.textInput} ${styles.messageArea}`} id="message" required></textarea>
               </div>
-              <button class="btn" id="send-message">Send Message</button>
+              <button className={styles.btn} id="send-message">Send Message</button>
           </form>
         </div>
     </div>
