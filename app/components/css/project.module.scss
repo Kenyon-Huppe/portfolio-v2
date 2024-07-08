@@ -11,7 +11,7 @@
         
         .textBorder {
             padding: 1rem;
-            border: 3px solid $primary;
+            border: 3px solid $highlight;
             border-radius: 10px;
         
 
@@ -28,6 +28,13 @@
                 li {
                     margin-top: 1.5rem;
                     font-size: 0.8rem;
+                    padding: 0.3rem;
+                    border-radius: 50px;
+                    transition: $transitionTime;
+                }
+
+                li:hover, li:focus {
+                    border: 1px $highlight solid;
                 }
             }
         }

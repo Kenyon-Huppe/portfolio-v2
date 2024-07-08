@@ -27,12 +27,13 @@
 
         .bottom {
             .techStacksContainer {
-                // width: 100%;
+                background-image: $shadow;
                 .techStacks {
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: center;
                     margin: 4rem 0 3rem;
+                     
 
                     li {
                         display: flex;
