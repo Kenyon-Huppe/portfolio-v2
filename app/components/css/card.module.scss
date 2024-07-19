@@ -1,3 +1,4 @@
+@import '../../variables.scss';
 
 .container {
     width: 50%;
@@ -6,5 +7,15 @@
     img {
         width: 100%;
         border-radius: 25px;
+        transition: border-color $transitionTime, transform $transitionTime;
     }
+
+    img:hover, img:focus {
+        border: px solid $highlight;
+        transform: scale(1.07);
+    }
+}
+
+.profilePicContainer {
+    margin: 0 auto;
 }

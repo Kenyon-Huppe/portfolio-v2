@@ -6,6 +6,6 @@ a contact form to get in touch. This site was created using
 Next.js and SCSS technologies.
 
 * TODO:
-- Hover styling effects.
 - Add "to top" button.
 - Style buttons.
+- Decrease img load times.
