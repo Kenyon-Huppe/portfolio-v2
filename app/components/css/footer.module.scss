@@ -12,6 +12,10 @@
             svg {
                 font-size: 3rem;
             }
+
+            svg:hover, svg:focus {
+                color: $primary;
+            }
         }
     }
 }

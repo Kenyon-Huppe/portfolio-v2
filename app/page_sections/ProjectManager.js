@@ -11,6 +11,7 @@ const project1Desc = `A web application showcasing the Sherman Community Players
                       This full-stack application was developed in a remote agile 
                       environment with extensive planning through bi-weekly meetings.`;
 const project1Stacks = ['JavaScript', 'Django', 'Docker', 'SCSS', 'Divio', 'HTML'];
+const project1Link = 'https://www.scptheater.org/';
 
 // project 2
 const project2Img = 'wjn_optimized.PNG'
@@ -21,6 +22,7 @@ const project2Desc = `A full-stack application focused on Wallace J. Nickols' mi
                       Instagram API widget, and the creation of a contact page with 
                       reCAPTCHA functionality.`;
 const project2Stacks = ['JavaScript', 'Django', 'Docker', 'SCSS', 'Divio', 'HTML'];
+const project2Link = 'https://wjn.us.aldryn.io/';
 
 // project 3
 const project3Img = 'botwQuiz_optimized.PNG'
@@ -30,6 +32,8 @@ const project3Desc = `This component-focused site was a personal project instant
                       and performing a series of algorithmic calculations to designate a 
                       specific output.`;
 const project3Stacks = ['React', 'Styled Components', 'CSS'];
+const project3Link = 'https://breath-of-the-wild-quiz.kenyon-huppe.com/';
+
 
 export default function ProjectManager() {
   return (
@@ -37,13 +41,13 @@ export default function ProjectManager() {
         <h2 className={styles.sectionTitle}>Projects</h2>
           <div className={styles.projectContentWrap}>
             <div className={styles.project} id="project-1">
-              <Project imgName={project1Img} classCaller={'project1Img'} title={project1Title} description={project1Desc} stacks={project1Stacks} />
+              <Project imgName={project1Img} classCaller={'project1Img'} title={project1Title} description={project1Desc} stacks={project1Stacks} projectLink={project1Link} />
             </div>
             <div className={styles.project} id="project-2">
-              <Project imgName={project2Img} classCaller={'project2Img'} title={project2Title} description={project2Desc} stacks={project2Stacks} />
+              <Project imgName={project2Img} classCaller={'project2Img'} title={project2Title} description={project2Desc} stacks={project2Stacks} projectLink={project2Link} />
             </div>
             <div className={styles.project} id="project-3">
-              <Project imgName={project3Img} classCaller={'project3Img'} title={project3Title} description={project3Desc} stacks={project3Stacks} />
+              <Project imgName={project3Img} classCaller={'project3Img'} title={project3Title} description={project3Desc} stacks={project3Stacks} projectLink={project3Link} />
             </div>
           </div>
     </>

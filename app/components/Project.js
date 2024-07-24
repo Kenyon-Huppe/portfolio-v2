@@ -3,10 +3,12 @@ import styles from './css/project.module.scss'
 
 import Card from './Card'
 
-export default function Project({imgName, classCaller, title, description, stacks}) {
+export default function Project({ imgName, classCaller, title, description, stacks, projectLink }) {
   return (
     <div className={styles.container}>
-        <Card imgName={imgName} classCaller={classCaller} />
+        <a href={projectLink} target='_blank' id={styles.projectLink}>
+            <Card imgName={imgName} classCaller={classCaller} />
+        </a>
         <div className={styles.textSection}>
             <div className={styles.textBorder}>
                 <h3>{title}</h3>
