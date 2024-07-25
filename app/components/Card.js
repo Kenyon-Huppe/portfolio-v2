@@ -4,7 +4,7 @@ import styles from './css/card.module.scss'
 export default function Card({imgName, classCaller}) {
   return (
     <div className={`${styles.container} ${styles[`${classCaller}Container`]}`}>
-      <img src={`/images/${imgName}`} alt={imgName} className={`styles.${classCaller}`} />
+      <img src={`/images/${imgName}`} alt={imgName} className={styles.cardImg} id={`styles.${classCaller}`} />
     </div>
   )
 }

@@ -5,7 +5,7 @@ import Card from './Card'
 
 export default function Project({ imgName, classCaller, title, description, stacks, projectLink }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.projectContainer}>
         <a href={projectLink} target='_blank' id={styles.projectLink}>
             <Card imgName={imgName} classCaller={classCaller} />
         </a>

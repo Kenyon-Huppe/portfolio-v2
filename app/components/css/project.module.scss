@@ -1,13 +1,13 @@
 @import '../../variables.scss';
 
-.container {
+.projectContainer {
     display: flex;
     flex-flow: row;
     margin: 3rem 0 3rem;
+    justify-content: space-around;
 
     .textSection {
-        width: 40%;
-        margin: 0 5% 0 5%;
+        width: 70%;
         
         .textBorder {
             padding: 1rem;
@@ -16,7 +16,6 @@
         
 
             h3 {
-                width: max-content;
                 margin: 0 0 1rem auto;
             }
 
@@ -24,6 +23,7 @@
                 display: flex;
                 flex-flow: row;
                 justify-content: space-between;
+                flex-wrap: wrap;
 
                 li {
                     margin-top: 1.5rem;
@@ -38,5 +38,17 @@
                 }
             }
         }
-    }
+    } 
+}
+
+@media (max-width: 1312px) {
+    .projectContainer {
+        flex-direction: column;
+
+        @media (max-width: 768px) {
+            .textSection {
+                width: 100%;
+            }
+        }
+    }  
 }

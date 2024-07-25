@@ -1,53 +1,54 @@
 @import '../../variables.scss';
 
 .header {
+    nav {
+        max-width: 40rem;
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
 
-        li {
-            font-size: 1.5em;
-            margin-left: 10rem;
+            li {
+                font-size: 1.5em;
+            }
 
+            .aboutContainer {
+            }
+
+            .aboutLink, .projectsLink, .contactLink {
+                position: relative;
+            }
+
+            .aboutLink::before, .projectsLink::before, .contactLink::before {
+                content: '';
+                /* width: 100%; */
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border: 2px solid $highlight;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: $transitionTime;
+            }
+
+            .aboutLink:hover::before,
+            .aboutLink:focus::before {
+                transform: scaleX(18);
+            }
+
+            .projectsLink:hover::before,
+            .projectsLink:focus::before {
+                transform: scaleX(24);
+            }
+
+            .contactLink:hover::before,
+            .contactLink:focus::before {
+                transform: scaleX(23);
+            }
+            
         }
-
-        .aboutContainer {
-            margin-left: 0;
-        }
-
-        .aboutLink, .projectsLink, .contactLink {
-            position: relative;
-        }
-
-        .aboutLink::before, .projectsLink::before, .contactLink::before {
-            content: '';
-            /* width: 100%; */
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            border: 2px solid $highlight;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: $transitionTime;
-        }
-
-        .aboutLink:hover::before,
-        .aboutLink:focus::before {
-            transform: scaleX(18);
-        }
-
-        .projectsLink:hover::before,
-        .projectsLink:focus::before {
-            transform: scaleX(24);
-        }
-
-        .contactLink:hover::before,
-        .contactLink:focus::before {
-            transform: scaleX(23);
-        }
-        
-    }
+    }   
 }

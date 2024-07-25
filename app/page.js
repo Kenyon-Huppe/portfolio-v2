@@ -25,7 +25,7 @@ export default function Home() {
               <h2 className={`${styles.title} ${styles.name}`}>Kenyon Huppe</h2>
               <h2 className={`${styles.title} ${styles.tagline}`}>Engineering excellence in code for exceptional user experiences.</h2>
               <h3 className={`${styles.title} ${styles.positionTitle}`}>Software Engineer</h3>
-              <div className={`${styles.title} ${styles.resumeContainer}`}>
+              <div className={styles.resumeContainer}>
                 <a href="/KenyonHuppe_Resume.pdf" className={styles.resumeDownload} download>Grab a copy of my resume!</a>
               </div>
             </section>

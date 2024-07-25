@@ -139,7 +139,6 @@ body {
     a {
       color: inherit;
       text-decoration: none;
-      width: 100%;
     }
 
     li {
@@ -154,6 +153,7 @@ body {
       outline: none;
       border-radius: 50px;
       transition: ease $transitionTime;
+      cursor: pointer;
     }
 
     button:hover, button:focus {

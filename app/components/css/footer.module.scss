@@ -8,6 +8,7 @@
         margin: 0 auto;
         justify-content: space-between;
 
+
         li {
             svg {
                 font-size: 3rem;
@@ -16,6 +17,12 @@
             svg:hover, svg:focus {
                 color: $primary;
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .socials {
+            max-width: 60%;
         }
     }
 }
