@@ -4,35 +4,39 @@ import Project from '../components/Project';
 
 // *** PROJECT VARIABLES ***
 // project 1
-const project1Img = 'scp_optimized.PNG'
-const project1Title = 'Sherman Community Players';
-const project1Desc = `A web application showcasing the Sherman Community Players 
+const project1Img = 'ste_optimized.PNG'
+const project1Title = 'Stephen Day Architecture';
+const project1Desc = `A website designed for architect Stephen Day, serving as a 
+                      platform to showcase his work in preserving and reinterpreting 
+                      historic architecture. The project featured the implementation 
+                      of dynamic photo sizing within Webkey's custom content 
+                      management system, requiring a combination of frontend 
+                      proficiency and backend expertise.`;
+const project1Stacks = ['JavaScript', 'Django', 'Docker', 'SCSS', 'Divio', 'HTML'];
+const project1Link = 'https://ste.us.aldryn.io/';
+
+
+// project 2
+const project2Img = 'scp_optimized.PNG'
+const project2Title = 'Sherman Community Players';
+const project2Desc = `A web application showcasing the Sherman Community Players 
                       and their current shows, tickets, and general information. 
                       This full-stack application was developed in a remote agile 
                       environment with extensive planning through bi-weekly meetings.`;
-const project1Stacks = ['JavaScript', 'Django', 'Docker', 'SCSS', 'Divio', 'HTML'];
-const project1Link = 'https://www.scptheater.org/';
+const project2Stacks = ['JavaScript', 'Django', 'Docker', 'SCSS', 'Divio', 'HTML'];
+const project2Link = 'https://www.scptheater.org/';
 
-// project 2
-const project2Img = 'wjn_optimized.PNG'
-const project2Title = 'Wallace J. Nickols';
-const project2Desc = `A full-stack application focused on Wallace J. Nickols' mission 
+
+// project 3
+const project3Img = 'wjn_optimized.PNG'
+const project3Title = 'Wallace J. Nickols';
+const project3Desc = `A full-stack application focused on Wallace J. Nickols' mission 
                       to save wildlife across the planet. This site involved the 
                       integration of over 400 blog posts, the integration of an 
                       Instagram API widget, and the creation of a contact page with 
                       reCAPTCHA functionality.`;
-const project2Stacks = ['JavaScript', 'Django', 'Docker', 'SCSS', 'Divio', 'HTML'];
-const project2Link = 'https://wjn.us.aldryn.io/';
-
-// project 3
-const project3Img = 'botwQuiz_optimized.PNG'
-const project3Title = 'Breath of the Wild Character Quiz';
-const project3Desc = `This component-focused site was a personal project instantiated 
-                      to hone my skills with React by passing data between input values 
-                      and performing a series of algorithmic calculations to designate a 
-                      specific output.`;
-const project3Stacks = ['React', 'Styled Components', 'CSS'];
-const project3Link = 'https://breath-of-the-wild-quiz.kenyon-huppe.com/';
+const project3Stacks = ['JavaScript', 'Django', 'Docker', 'SCSS', 'Divio', 'HTML'];
+const project3Link = 'https://wjn.us.aldryn.io/';
 
 
 export default function ProjectManager() {
